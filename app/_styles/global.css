@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .spinner {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme("colors.primary.900");
+    border-right-color: theme("colors.primary.200");
+    animation: rotate 1s infinite linear;
+  }
+
+  .spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme("colors.primary.200");
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  .StyledToggle{
+    background: none;
+    border: none;
+    padding: 0.4rem;
+    border-radius: var(--border-radius-sm);
+    transform: translateX(0.8rem);
+    transition: all 0.2s;
+  
+    &:hover {
+      background-color: var(--color-grey-100);
+    }
+  
+    & svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      color: var(--color-grey-700);
+    }
+  }
+  
+   .StyledList{
+    background-color: var(--color-grey-0);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--border-radius-md);
+  
+    right: 50px;
+    top: 10px;
+    z-index: 999;
+  }
+  
+   .StyledButton{
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+    transition: all 0.2s;
+  
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  
+    &:hover {
+      background-color: var(--color-grey-50);
+    }
+  
+    & svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      color: var(--color-grey-400);
+      transition: all 0.3s;
+    }
+  }
+
+}
+
+.boxRound::before {
+  content: '';
+  background: transparent;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 0 0 10px 0;
+  transform: skewX(0deg) translateX(-25px) translateY(-1px);
+  left: 0;
+  bottom: 0;
+  box-shadow: 6px 6px 0 #322121;
+  z-index: 999;
+  border-bottom: 1px solid #00FF99;
+  border-right: 1px solid #00FF99;
+}
+.boxRound::after {
+  content: '';
+  background: transparent;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 0 0 10px 0;
+  transform: skewX(20deg) translateX(-19px) translateY(-44px);
+  right: 0;
+  box-shadow: 6px 6px 0 #322121;
+  z-index: 999;
+  border-bottom: 1px solid #00FF99;
+  border-right: 1px solid #00FF99;
+}
+
+
+/* For data picker */
+
+.rdp {
+  --rdp-cell-size: 32px !important;
+  --rdp-accent-color: theme("colors.accent.500") !important;
+  --rdp-background-color: theme("colors.accent.600") !important;
+  margin: 0 !important;
+}
+
+*{margin: 0;padding: 0;}
