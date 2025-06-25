@@ -14,7 +14,7 @@ function Navbar() {
             router === "/about"
               ? "border-none border-base-200 bg-opacity-50 sm:bg-base-100 lg:border-8 lg:border-dark-300"
               : "border-base-200"
-          } flex items-center gap-10 rounded-full border bg-base-100 px-20 py-2 text-base`}
+          } flex items-center gap-10 rounded-full border bg-base-100 px-10 sm:px-15 lg:px-20 py-2 text-base`}
         >
           <li
             className={`${router === "/about" && "text-secondary-200"} duration-200 focus-within:text-secondary-200 hover:text-secondary-200`}

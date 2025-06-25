@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${merriweather.className} bg-dark-300 text-primary-100 min-h-svh antialiased relative `}
+        className={`${merriweather.className} bg-dark-300 text-primary-100 min-h-dvh antialiased relative `}
         suppressHydrationWarning={true}
       >
         <main className="w-full">

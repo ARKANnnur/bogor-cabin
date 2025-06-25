@@ -1,10 +1,10 @@
 "use client";
 
 import gsap from "gsap";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 function Animation({ children }) {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.fromTo(
       [".nav", ".titleText", ".subText", ".image", ".icons"],
       {
@@ -59,7 +59,7 @@ function Animation({ children }) {
 }
 
 function AnimationCabins({ children, reload }) {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.fromTo(
       ".itemCabin",
       {

@@ -36,7 +36,7 @@ async function page() {
               experience serenity like never before.
             </p>
           </div>
-          <div className="fixed z-0 h-[100dhv] w-full sm:relative sm:w-2/3">
+          <div className="fixed z-0 min-h-[100dhv] w-full sm:relative sm:w-2/3">
             <Image
               src={aboutImage}
               placeholder="blur"
@@ -44,18 +44,18 @@ async function page() {
               className="image fixed z-0 h-full w-full object-cover object-top sm:relative sm:rounded-3xl lg:rounded-3xl lg:rounded-bl-[215px]"
               alt="Cabin"
             />
-            <div className="icons fixed bottom-28 flex h-auto w-full justify-center sm:relative sm:bottom-auto sm:block">
-              <div className="z-10 flex h-auto items-center justify-center gap-5 rounded-full border border-secondary-50 px-5 py-3 sm:absolute sm:bottom-10 sm:right-10">
+            <div className="icons fixed bottom-20 flex h-auto w-full justify-center sm:relative sm:bottom-auto sm:block">
+              <div className="z-10 flex h-auto items-center justify-center gap-5 rounded-full border border-secondary-50 px-5 py-2 sm:py-3 sm:absolute sm:bottom-10 sm:right-10">
                 <FaInstagram
-                  className="h-7 w-7 sm:h-10 sm:w-10"
+                  className="h-5 w-5 sm:h-10 sm:w-10"
                   style={{ color: "#00FF99" }}
                 />
                 <FaFacebook
-                  className="h-7 w-7 sm:h-10 sm:w-10"
+                  className="h-5 w-5 sm:h-10 sm:w-10"
                   style={{ color: "#00FF99" }}
                 />
                 <FaXTwitter
-                  className="h-7 w-7 sm:h-10 sm:w-10"
+                  className="h-5 w-5 sm:h-10 sm:w-10"
                   style={{ color: "#00FF99" }}
                 />
               </div>
